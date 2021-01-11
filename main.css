@@ -1,0 +1,94 @@
+:root {
+    --color-nano: #141414;
+    --color-nanonotsolight: #1c1c1c;
+    --color-nanolight: #222222;
+    --color-nanolightlight: #777777;
+    --color-white: #c5c8c6;
+    --color-mystge: #ce6916;
+    --color-mystlue: #689dcc;
+    --color-mysted: #ff4c4c;
+    --color-mysteen: #2ec933;   
+}
+
+body {
+    font-family: "Ubuntu Mono", monospace;
+    letter-spacing: 0.15rem;
+    background-color: var(--color-nano);
+    color: var(--color-white);
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-mystge);
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+a:hover {
+    color: var(--color-mystlue);
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#header .title {
+    color: var(--color-white);
+    display: inline-block;
+}
+
+#header nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+#header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#about {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#about .avatar {
+    width: 200px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+}
+
+footer i {
+    font-size: 1rem;
+}
