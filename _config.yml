@@ -1,1 +1,12 @@
-theme: hacked-jekyll
+title: CodeMyst
+email: code@myst.rs
+description: >-
+  Hello! I'm CodeMyst, a software developer that likes to play around with everything.
+  I mostly focus on web and game programming. This is my personal portfolio and blog.
+baseurl: ""
+url: ""
+github_username: codemyst
+
+theme: minima
+plugins:
+  - jekyll-feed
