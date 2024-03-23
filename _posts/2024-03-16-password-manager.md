@@ -2,7 +2,7 @@
 title: Self hosted password manager using Git and GPG
 description: Get complete control over your passwords using the unix pass utility and git
 date: 2024-03-16
-permalink: password-manager
+permalink: blog/password-manager
 ---
 
 ---

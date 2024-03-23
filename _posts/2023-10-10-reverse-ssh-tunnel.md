@@ -2,7 +2,7 @@
 title: Expose local services using Reverse SSH Tunnels
 description: A guide on how to expose services running on localhost to the public internet using a reverse SSH tunnel
 date: 2023-10-10
-permalink: reverse-ssh-tunnel
+permalink: blog/reverse-ssh-tunnel
 ---
 
 ---

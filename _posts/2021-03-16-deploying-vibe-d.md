@@ -3,7 +3,7 @@ layout: post
 title: Deploying vibe.d apps with GitHub Actions
 description: Guide on how to deploy vibe.d web applications to your server using GitHub Actions
 date: 2021-03-16
-permalink: deploying-vibed
+permalink: blog/deploying-vibed
 ---
 
 ## Backstory
