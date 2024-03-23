@@ -1,0 +1,48 @@
+---
+layout: base
+---
+
+<div id="landing">
+  <h1>
+    <span class="top"><div class="landing-title">code</div></span>
+    <span class="bottom"><div class="landing-title">myst</div></span>
+  </h1>
+
+  <nav>
+    <a href="mailto:code@myst.rs">code@myst.rs</a><a href="https://github.com/codemyst" target="_blank">github</a>
+  </nav>
+
+  <div class="about-me container-small">
+    <h3>{{ site.description }}</h3>
+  </div>
+
+  <div class="projects container">
+    <a href="https://paste.myst.rs" target="_blank" class="project">
+      <p>PasteMyst</p>
+      <p>A powerful website for storing and sharing text and code snippets</p>
+    </a>
+
+    <a href="https://github.com/cosmomyst/dath" target="_blank" class="project">
+      <p>Dath</p>
+      <p>A math library written in D for game programming</p>
+    </a>
+
+    <a href="https://codemyst.itch.io/endless-nameless" target="_blank" class="project">
+      <p>Endless, Nameless</p>
+      <p>A 2D platformer with an interesting concept made in a single weekend</p>
+    </a>
+  </div>
+
+  <div class="latest-post container-small">
+    <p>My blog posts:</p>
+
+    {%- assign date_format = "%b %-d, %Y" -%}
+    {%- for post in site.posts -%}
+      <a href="{{ post.url | relative_url }}" class="post">
+        <p class="title">{{ post.title | escape }}</p>
+        <p class="date">{{ post.date | date: date_format }}</p>
+        <p class="summary">{{ post.description }}</p>
+      </a>
+    {%- endfor -%}
+  </div>
+</div>

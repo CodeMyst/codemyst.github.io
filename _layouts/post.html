@@ -1,0 +1,35 @@
+---
+layout: base
+---
+
+<div id="blog">
+  <div class="header">
+    <nav class="container-small">
+      <div class="monospace">
+        <a href="/">[codemyst]</a>
+      </div>
+      <div class="monospace">
+        <a href="{{ site.feed.path | relative_url }}">feed</a>
+      </div>
+    </nav>
+  </div>
+
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+  <article class="container-small" itemscope itemtype="http://schema.org/BlogPosting">
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    {%- if page.date -%}
+      <time class="data" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">Published on: {{ page.date | date: date_format }}</time>
+    {%- endif -%}
+
+    <div class="markdown">
+      {{ content }}
+    </div>
+
+    <div class="comments">
+      <script src="https://giscus.app/client.js" data-repo="CodeMyst/myst.rs" data-repo-id="MDEwOlJlcG9zaXRvcnkzMTA0MDU0OTk=" data-category="Announcements" data-category-id="DIC_kwDOEoBpe84B_tVE" data-mapping="pathname" data-reactions-enabled="0" data-emit-metadata="0" data-theme="dark_dimmed" data-lang="en" crossorigin="anonymous" async></script>
+    </div>
+  </article>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</div>
