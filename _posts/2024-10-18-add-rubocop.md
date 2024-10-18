@@ -32,7 +32,7 @@ AllCops:
     - "another/path/to/file/with/linting/issues/**/*"
 ```
 
-Now here's the fun part, generating the list of files with linting issues. Since rubocop doesn't provide a way to do this out of the box (at least that I know of), I used the following command to generate the list:
+Now here's the fun part, generating the list of files with linting issues. Now you can use the `--list-target-files/-L` option to list all the files rubocop will inspect, and wrap them in the yaml format like so:
 
 ```sh
 bundle exec rubocop -L | uniq | sed -e "s/\(.*\)/- '\1'/"
