@@ -342,6 +342,7 @@ footer .container p {
 .markdown code {
     background-color: var(--color-bg1);
     padding: 2px 5px !important;
+    font-size: var(--font-size-code);
 }
 
 .markdown blockquote {
